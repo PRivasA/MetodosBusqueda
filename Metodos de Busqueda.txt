@@ -1,0 +1,32 @@
+Busqueda Binaria:
+Función BusquedaBinaria(arreglo, elemento):
+    inicio = 0
+    fin = longitud(arreglo) - 1
+
+    Mientras inicio <= fin hacer
+        medio = (inicio + fin) / 2
+
+        Si arreglo[medio] == elemento entonces
+            Devolver medio
+        Fin Si
+
+        Si arreglo[medio] < elemento entonces
+            inicio = medio + 1
+        Sino
+            fin = medio - 1
+        Fin Si
+    Fin Mientras
+
+    Devolver -1 elemento no encontrado
+Fin Función
+
+
+
+Busqueda Secuencial:
+función busquedaSecuencial(arreglo, objetivo)
+    índice = 0  
+    mientras índice < longitud(arreglo)
+        si arreglo[índice] es igual a objetivo
+            retornar índice  
+        índice = índice + 1  
+    retornar -1  
